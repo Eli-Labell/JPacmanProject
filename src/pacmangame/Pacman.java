@@ -27,7 +27,7 @@ public class Pacman extends BoardPiece {
 	public Pacman(int[][] pos) {
 		super(type, pos, pointValue, true);
 		BoardState.stuff.put(pos, this);
-		
+		BoardState.paco = this;
 	}
 	
 	/**
