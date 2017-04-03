@@ -12,5 +12,4 @@ public class Walls extends BoardPiece {
 	}
 	
 	
-	
 }
