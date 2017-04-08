@@ -6,7 +6,7 @@ public class Food extends BoardPiece {
 	private static int points = 10;
 	private boolean powers;
 	
-	public Food(int[][] pos, boolean powers) {
+	public Food(Position pos, boolean powers) {
 		super(whatAmI, pos, points, true);
 		this.powers = powers;
 		BoardState.foodPlacement.add(this);

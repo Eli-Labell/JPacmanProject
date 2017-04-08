@@ -13,13 +13,13 @@ public class Ghosts extends BoardPiece {
 	 * 
 	 * @param pos where does the ghost start
 	 */
-	public Ghosts(int[][] pos) {
+	public Ghosts(Position pos) {
 		super(type, pos, pointValue, true);
 		this.mean = true;
 		BoardState.stuff.put(pos, this);
 	}
 	
-	public void move(int[][] newPos) {
+	public void move(Position newPos) {
 		if (BoardState.things.get(newPos) instanceof Walls) {
 			//can't do that dave
 		} else if (BoardState.stuff.get(newPos) instanceof Pacman) {

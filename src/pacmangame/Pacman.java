@@ -24,9 +24,9 @@ public class Pacman extends BoardPiece {
 	 * 
 	 * @param pos where does he start?
 	 */
-	public Pacman(int[][] pos) {
-		super(type, pos, pointValue, true);
-		BoardState.stuff.put(pos, this);
+	public Pacman(Position p) {
+		super(type, p, pointValue, true);
+		BoardState.stuff.put(p, this);
 		BoardState.paco = this;
 	}
 	
@@ -35,7 +35,7 @@ public class Pacman extends BoardPiece {
 	 * 
 	 * @param newPos where paco wants to go
 	 */
-	public static void move(int[][] newPos) {
+	public static void move(Position newPos) {
 		if (BoardState.things.get(newPos) instanceof Walls) { //can't enter a wall
 			
 		} else if (BoardState.things.get(newPos) instanceof Food) { //food gets eaten
@@ -59,20 +59,20 @@ public class Pacman extends BoardPiece {
 	 * @param newPos
 	 */
 	public static boolean move(int i) {
-		int[][] newPos;
+		Position newPos;
 		//find out what absolute 
 		if (i == 1) { //up
-			int[][] placeHolder = BoardState.paco.getPos();
-			newPos = new int[placeHolder.length + 1][placeHolder[0].length];
+			Position placeHolder = BoardState.paco.getPos();
+			newPos = new Position(placeHolder.getX(), placeHolder.getY() + 1);
 		} else if (i == 2) { //down
-			int[][] placeHolder = BoardState.paco.getPos();
-			newPos = new int[placeHolder.length - 1][placeHolder[0].length];
+			Position placeHolder = BoardState.paco.getPos();
+			newPos = new Position(placeHolder.getX(), placeHolder.getY() - 1);
 		} else if (i == 3) { //left
-			int[][] placeHolder = BoardState.paco.getPos();
-			newPos = new int[placeHolder.length][placeHolder[0].length - 1];
+			Position placeHolder = BoardState.paco.getPos();
+			newPos = new Position(placeHolder.getX() - 1, placeHolder.getY());
 		} else { //right
-			int[][] placeHolder = BoardState.paco.getPos();
-			newPos = new int[placeHolder.length][placeHolder[0].length + 1];
+			Position placeHolder = BoardState.paco.getPos();
+			newPos = new Position(placeHolder.getX() + 1, placeHolder.getY());
 		}
 		
 		
@@ -109,7 +109,7 @@ public class Pacman extends BoardPiece {
 	 * 
 	 * @param pacoPos where is the pacoman
 	 */
-	public static void eatFood(int[][] pacoPos) {
+	public static void eatFood(Position pacoPos) {
 		if (BoardState.things.get(pacoPos) instanceof Food) {
 			BoardState.score += BoardState.things.get(pacoPos).getPoints();
 			BoardState.things.remove(pacoPos); //somehow stop this food from being visualized
@@ -124,7 +124,7 @@ public class Pacman extends BoardPiece {
 	 * 
 	 * @param pacoPos where is paco
 	 */
-	public static void getEaten(int[][] pacoPos) {
+	public static void getEaten(Position pacoPos) {
 		System.exit(0); // paco is kill
 	}
 	
