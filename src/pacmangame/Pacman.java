@@ -17,7 +17,7 @@ public class Pacman extends BoardPiece {
 	
 	private static final boolean[] type = new boolean[] {false, false, false, false, true};
 	private static final int pointValue = -100;
-	boolean[] legalMoves = new boolean[] {false, false, false, false};
+	private static boolean[] legalMoves = new boolean[] {false, false, false, false}; //can be static because there is only ever one pacman
 	
 	/**
 	 * constructor for the pacman
@@ -96,11 +96,6 @@ public class Pacman extends BoardPiece {
 			return true;
 		}
 	}
-	
-	
-	
-	
-	
 	
 	
 	/**
