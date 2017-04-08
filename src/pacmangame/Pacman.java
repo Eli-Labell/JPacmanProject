@@ -1,7 +1,7 @@
 package pacmangame;
 
 /**
- * SOMEHOW ADD PACMAN TO THE PACMAN AT THE BOARD STATE
+ * Pacman class controls the various facets of pacman life
  * 
  * 
  * 
