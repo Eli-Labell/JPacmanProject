@@ -31,6 +31,8 @@ public class Ghosts extends BoardPiece {
 				//send ghost to restart point after x clock cycles
 			}
 		} else {
+			BoardState.stuff.remove(this.whereAmI);
+			BoardState.stuff.put(newPos, this);
 			this.whereAmI = newPos; //call visualization method here
 		}
 	}
