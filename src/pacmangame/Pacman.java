@@ -15,7 +15,7 @@ package pacmangame;
 
 public class Pacman extends BoardPiece {
 	
-	private static final boolean[] type = new boolean[] {false, false, false, false, true};
+	//private static final boolean[] type = new boolean[] {false, false, false, false, true};
 	private static final int pointValue = -100;
 	private static boolean[] legalMoves = new boolean[] {false, false, false, false}; //can be static because there is only ever one pacman
 	
@@ -25,7 +25,7 @@ public class Pacman extends BoardPiece {
 	 * @param pos where does he start?
 	 */
 	public Pacman(Position p) {
-		super(type, p, pointValue, true);
+		super(p, pointValue, true);
 		BoardState.stuff.put(p, this);
 		BoardState.paco = this;
 	}
@@ -41,6 +41,7 @@ public class Pacman extends BoardPiece {
 		} else if (BoardState.things.get(newPos) instanceof Food) { //food gets eaten
 			eatFood(newPos);
 			BoardState.stuff.remove(BoardState.paco.getPos());
+			
 			BoardState.stuff.put(newPos, BoardState.paco);
 		} else if (BoardState.stuff.get(newPos) instanceof Ghosts) {
 			if (((Ghosts) BoardState.stuff.get(newPos)).isMean()) { //mean ghosts eat paco
@@ -108,6 +109,7 @@ public class Pacman extends BoardPiece {
 		if (BoardState.things.get(pacoPos) instanceof Food) {
 			BoardState.score += BoardState.things.get(pacoPos).getPoints();
 			BoardState.things.remove(pacoPos); //somehow stop this food from being visualized
+			BoardState.things.put(pacoPos, new EmptySpace(pacoPos, true));
 		} else if (BoardState.things.get(pacoPos) instanceof Ghosts) {
 			BoardState.score += BoardState.stuff.get(pacoPos).getPoints();
 			BoardState.stuff.remove(pacoPos); //reset ghost to beginning

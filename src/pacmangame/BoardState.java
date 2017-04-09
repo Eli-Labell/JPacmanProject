@@ -4,9 +4,18 @@ import java.util.ArrayList;
 import java.util.Map;
 import java.util.TreeMap;
 
+/**
+ * This is the board state object<br>
+ * It keeps track of board piece objects and their properties<br>
+ * It
+ * 
+ * 
+ * @author Eliezer Labell
+ *
+ */
 public class BoardState {
 	
-	//make god paco to reference from Pacman class.
+	
 	
 	public static Pacman paco; //all pacman information requests should go here
 	

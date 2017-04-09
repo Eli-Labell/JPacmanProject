@@ -2,7 +2,6 @@ package pacmangame;
 
 public class Ghosts extends BoardPiece {
 	
-	private static final boolean[] type = new boolean[] {false, false, false, true, false};
 	private static final int pointValue = 100;
 	boolean[] legalMoves = new boolean[] {false, false, false, false};
 	private boolean mean;
@@ -14,7 +13,7 @@ public class Ghosts extends BoardPiece {
 	 * @param pos where does the ghost start
 	 */
 	public Ghosts(Position pos) {
-		super(type, pos, pointValue, true);
+		super(pos, pointValue, true);
 		this.mean = true;
 		BoardState.stuff.put(pos, this);
 	}
@@ -24,6 +23,7 @@ public class Ghosts extends BoardPiece {
 			//can't do that dave
 		} else if (BoardState.stuff.get(newPos) instanceof Pacman) {
 			if (this.isMean()) {
+				Pacman.getEaten(newPos);
 				//game over man, game over
 			} else {
 				//ghost is kill

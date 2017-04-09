@@ -1,6 +1,6 @@
 package pacmangame;
 
-
+//get left right etc methods to return objects of adjacent pos.
 
 /**
  * Class that replaces int arrays as a way to hold the position of board piece objects
@@ -57,6 +57,22 @@ public class Position {
 		} else {
 			this.xPos = y;
 		}
+	}
+	
+	public Position getUp(Position p) {
+		return new Position(p.getX(), p.getY() + 1);
+	}
+	
+	public Position getDown(Position p) {
+		return new Position(p.getX(), p.getY() - 1);
+	}
+	
+	public Position getLeft(Position p) {
+		return new Position(p.getX() - 1, p.getY());
+	}
+	
+	public Position getRight(Position p) {
+		return new Position(p.getX() + 1, p.getY());
 	}
 	
 	
