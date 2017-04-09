@@ -59,16 +59,16 @@ public class Pacman extends BoardPiece {
 		//find out what absolute 
 		if (i == 1) { //up
 			Position placeHolder = BoardState.paco.getPos();
-			newPos = new Position(placeHolder.getX(), placeHolder.getY() + 1);
+			newPos = Position.getUp(placeHolder);
 		} else if (i == 2) { //down
 			Position placeHolder = BoardState.paco.getPos();
-			newPos = new Position(placeHolder.getX(), placeHolder.getY() - 1);
+			newPos = Position.getDown(placeHolder);
 		} else if (i == 3) { //left
 			Position placeHolder = BoardState.paco.getPos();
-			newPos = new Position(placeHolder.getX() - 1, placeHolder.getY());
+			newPos = Position.getLeft(placeHolder);
 		} else { //right
 			Position placeHolder = BoardState.paco.getPos();
-			newPos = new Position(placeHolder.getX() + 1, placeHolder.getY());
+			newPos = Position.getRight(placeHolder);
 		}
 		
 		

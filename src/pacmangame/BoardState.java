@@ -30,6 +30,25 @@ public class BoardState {
 	
 	//instantiate the initial board pieces where they should be and add them to the pertinent data structures
 	public static void populate() {
+		
+		Position pacoPos = new Position(2, 2);
+		Pacman paco = new Pacman(pacoPos);
+		stuff.put(pacoPos,  paco);
+		
+		Position inky = new Position(10, 10);
+		Ghosts inkyG = new Ghosts(inky);
+		stuff.put(inky, inkyG);
+		Position blinky = new Position(10, 11);
+		Ghosts blinkyG = new Ghosts(blinky);
+		stuff.put(blinky,  blinkyG);
+		Position pinky = new Position(9, 11);
+		Ghosts pinkyG = new Ghosts(pinky);
+		stuff.put(pinky,  pinkyG);
+		Position daniel = new Position(10, 12);
+		Ghosts danielG = new Ghosts(daniel);
+		stuff.put(daniel,  danielG);
+		
+		
 		int x = 1;
 		while (x < 22) { //top walls
 			things.put(new Position(x, 1), new Walls(new Position(x, 1)));
