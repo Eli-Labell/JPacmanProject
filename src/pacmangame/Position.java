@@ -9,6 +9,8 @@ package pacmangame;
  */
 public class Position {
 	
+	
+	protected boolean visited = false;
 	private static final int xMin = 1;
 	private static final int yMin = 1;
 	private static final int xMax = 20;
@@ -33,6 +35,7 @@ public class Position {
 		} else {
 			this.yPos = y;
 		}
+		this.visited = false;
 	}
 	
 	public int getX() {
