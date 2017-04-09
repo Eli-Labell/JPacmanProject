@@ -4,9 +4,9 @@ public class EmptySpace extends BoardPiece {
 	
 	protected boolean visited = false;
 	
-	public EmptySpace(Position p, boolean visit) {
+	public EmptySpace(Position p) {
 		super(p, 0, false);
-		this.visited = visit;
+		this.visited = false;
 	}
 	
 	
