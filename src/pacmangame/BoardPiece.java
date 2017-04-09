@@ -14,11 +14,9 @@ package pacmangame;
 public abstract class BoardPiece {
 	
 
-	protected Position whereAmI; //y,x
-	protected int pointValue; //when removed increment score with point value of object
+	protected Position whereAmI; //x,y originating from top right
+	protected int pointValue; //when removed, increment score with point value of object
 	protected boolean visable; //when not visable, don't show to the player
-	
-	
 	
 	/**
 	 * Constructor for board piece objects

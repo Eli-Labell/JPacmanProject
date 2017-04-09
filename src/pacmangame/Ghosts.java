@@ -3,10 +3,8 @@ package pacmangame;
 public class Ghosts extends BoardPiece {
 	
 	private static final int pointValue = 100;
-	boolean[] legalMoves = new boolean[] {false, false, false, false};
-	private boolean mean;
+	private boolean mean; //hostility
 
-	
 	/**
 	 * Constructor for a ghost
 	 * 

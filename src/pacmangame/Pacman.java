@@ -15,14 +15,13 @@ package pacmangame;
 
 public class Pacman extends BoardPiece {
 	
-	//private static final boolean[] type = new boolean[] {false, false, false, false, true};
 	private static final int pointValue = -100;
-	private static boolean[] legalMoves = new boolean[] {false, false, false, false}; //can be static because there is only ever one pacman
+
 	
 	/**
 	 * constructor for the pacman
 	 * 
-	 * @param pos where does he start?
+	 * @param p where does he start?
 	 */
 	public Pacman(Position p) {
 		super(p, pointValue, true);
@@ -109,7 +108,7 @@ public class Pacman extends BoardPiece {
 		if (BoardState.things.get(pacoPos) instanceof Food) {
 			BoardState.score += BoardState.things.get(pacoPos).getPoints();
 			BoardState.things.remove(pacoPos); //somehow stop this food from being visualized
-			BoardState.things.put(pacoPos, new EmptySpace(pacoPos, true));
+			BoardState.things.put(pacoPos, new EmptySpace(pacoPos));
 		} else if (BoardState.things.get(pacoPos) instanceof Ghosts) {
 			BoardState.score += BoardState.stuff.get(pacoPos).getPoints();
 			BoardState.stuff.remove(pacoPos); //reset ghost to beginning
@@ -117,7 +116,7 @@ public class Pacman extends BoardPiece {
 	}
 	
 	/**
-	 * Paco is killl
+	 * Paco is kill
 	 * 
 	 * @param pacoPos where is paco
 	 */
