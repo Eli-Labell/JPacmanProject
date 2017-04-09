@@ -9,10 +9,6 @@ package pacmangame;
  *
  */
 
-
-
-
-
 public class Pacman extends BoardPiece {
 	
 	private static final int pointValue = -100;
