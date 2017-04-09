@@ -59,19 +59,19 @@ public class Position {
 		}
 	}
 	
-	public Position getUp(Position p) {
+	public static Position getUp(Position p) {
 		return new Position(p.getX(), p.getY() + 1);
 	}
 	
-	public Position getDown(Position p) {
+	public static Position getDown(Position p) {
 		return new Position(p.getX(), p.getY() - 1);
 	}
 	
-	public Position getLeft(Position p) {
+	public static Position getLeft(Position p) {
 		return new Position(p.getX() - 1, p.getY());
 	}
 	
-	public Position getRight(Position p) {
+	public static Position getRight(Position p) {
 		return new Position(p.getX() + 1, p.getY());
 	}
 	
