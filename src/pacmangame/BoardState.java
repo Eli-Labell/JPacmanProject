@@ -1,8 +1,8 @@
 package pacmangame;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Map;
-import java.util.TreeMap;
 
 /**
  * This is the board state object<br>
@@ -24,8 +24,8 @@ public class BoardState {
 	public static int time = 50000; //time counts down
 	public static ArrayList<Walls> wallPlacement = new ArrayList<>();
 	public static ArrayList<Food> foodPlacement = new ArrayList<>();
-	public static Map<Position, BoardPiece> things = new TreeMap<>(); //for static pieces
-	public static Map<Position, BoardPiece> stuff = new TreeMap<>(); //for dynamic pieces
+	public static Map<Position, BoardPiece> things = new HashMap<>(); //for static pieces
+	public static Map<Position, BoardPiece> stuff = new HashMap<>(); //for dynamic pieces
 	
 	
 	//instantiate the initial board pieces where they should be and add them to the pertinent data structures
@@ -267,11 +267,41 @@ public class BoardState {
 		things.put(new Position(18, 12), new Food(new Position(18, 12), false));
 		things.put(new Position(19, 12), new Walls(new Position(19, 12)));
 		
+		things.put(new Position(3, 13), new Walls(new Position(3, 13))); //thirteenth row
+		things.put(new Position(4, 13), new Food(new Position(4, 13), false));
+		things.put(new Position(5, 13), new Food(new Position(5, 13), false));
+		things.put(new Position(6, 13), new Food(new Position(6, 13), false));
+		things.put(new Position(7, 13), new Food(new Position(7, 13), false));
+		things.put(new Position(8, 13), new Food(new Position(8, 13), false));
+		things.put(new Position(9, 13), new Walls(new Position(9, 13)));
+		things.put(new Position(10, 13), new Walls(new Position(10, 13)));
+		things.put(new Position(11, 13), new Walls(new Position(11, 13)));
+		things.put(new Position(12, 13), new Walls(new Position(12, 13)));
+		things.put(new Position(13, 13), new Walls(new Position(13, 13)));
+		things.put(new Position(14, 13), new Food(new Position(14, 13), false));
+		things.put(new Position(15, 13), new Food(new Position(15, 13), false));
+		things.put(new Position(16, 13), new Food(new Position(16, 13), false));
+		things.put(new Position(17, 13), new Food(new Position(17, 13), false));
+		things.put(new Position(18, 13), new Food(new Position(18, 13), false));
+		things.put(new Position(19, 13), new Walls(new Position(19, 13)));
+		
+		things.put(new Position(3, 14), new Walls(new Position(3, 14))); //fourteenth row
+		
+		things.put(new Position(3, 14), new Walls(new Position(3, 14))); 
+		things.put(new Position(3, 14), new Walls(new Position(3, 14))); 
+		things.put(new Position(3, 14), new Walls(new Position(3, 14))); 
 		
 		
 		
+		things.put(new Position(3, 14), new Walls(new Position(3, 14))); 
 		
 		
+		
+		things.put(new Position(3, 14), new Walls(new Position(3, 14))); //fourteenth row
+		things.put(new Position(3, 14), new Walls(new Position(3, 14))); //fourteenth row
+		things.put(new Position(3, 14), new Walls(new Position(3, 14))); //fourteenth row
+		
+		things.put(new Position(3, 14), new Walls(new Position(3, 14))); //fourteenth row
 		
 		
 		
