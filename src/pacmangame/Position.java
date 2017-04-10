@@ -63,11 +63,11 @@ public class Position {
 	}
 	
 	public static Position getUp(Position p) {
-		return new Position(p.getX(), p.getY() + 1);
+		return new Position(p.getX(), p.getY() - 1);
 	}
 	
 	public static Position getDown(Position p) {
-		return new Position(p.getX(), p.getY() - 1);
+		return new Position(p.getX(), p.getY() + 1);
 	}
 	
 	public static Position getLeft(Position p) {
