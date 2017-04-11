@@ -81,10 +81,6 @@ public class BoardState {
 			x++;
 		}
 		
-		
-		
-		
-		
 		x = 2;
 		while (x < 21) { //bottom empty line
 			things.put(new Position(x, 19), new Food(new Position(x, 19), false));
