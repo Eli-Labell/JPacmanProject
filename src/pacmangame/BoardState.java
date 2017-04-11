@@ -286,34 +286,92 @@ public class BoardState {
 		things.put(new Position(19, 13), new Walls(new Position(19, 13)));
 		
 		things.put(new Position(3, 14), new Walls(new Position(3, 14))); //fourteenth row
+		things.put(new Position(4, 14), new Food(new Position(4, 14), false));
+		things.put(new Position(5, 14), new Walls(new Position(5, 14))); 
+		things.put(new Position(6, 14), new Walls(new Position(6, 14))); 
+		things.put(new Position(7, 14), new Walls(new Position(7, 14))); 
+		things.put(new Position(8, 14), new Food(new Position(8, 14), false));
+		things.put(new Position(9, 14), new Food(new Position(9, 14), false));
+		things.put(new Position(10, 14), new Food(new Position(10, 14), false));
+		things.put(new Position(11, 14), new Walls(new Position(11, 14))); 
+		things.put(new Position(12, 14), new Food(new Position(12, 14), false));
+		things.put(new Position(13, 14), new Food(new Position(13, 14), false));
+		things.put(new Position(14, 14), new Food(new Position(14, 14), false));
+		things.put(new Position(15, 14), new Walls(new Position(15, 14))); //fourteenth row
+		things.put(new Position(16, 14), new Walls(new Position(16, 14))); //fourteenth row
+		things.put(new Position(17, 14), new Walls(new Position(17, 14))); //fourteenth row
+		things.put(new Position(18, 14), new Food(new Position(18, 14), false));
+		things.put(new Position(19, 14), new Walls(new Position(19, 14))); //fourteenth row
 		
-		things.put(new Position(3, 14), new Walls(new Position(3, 14))); 
-		things.put(new Position(3, 14), new Walls(new Position(3, 14))); 
-		things.put(new Position(3, 14), new Walls(new Position(3, 14))); 
-		
-		
-		
-		things.put(new Position(3, 14), new Walls(new Position(3, 14))); 
-		
-		
-		
-		things.put(new Position(3, 14), new Walls(new Position(3, 14))); //fourteenth row
-		things.put(new Position(3, 14), new Walls(new Position(3, 14))); //fourteenth row
-		things.put(new Position(3, 14), new Walls(new Position(3, 14))); //fourteenth row
-		
-		things.put(new Position(3, 14), new Walls(new Position(3, 14))); //fourteenth row
-		
-		
-		
-		
+		things.put(new Position(3, 15), new Walls(new Position(3, 15))); //fifteenth row
 		
 		
 		
 		
 		
+		things.put(new Position(9, 15), new Walls(new Position(9, 15)));
 		
 		
 		
+		things.put(new Position(13, 15), new Walls(new Position(13, 15)));
+		
+		
+		
+		
+		
+		things.put(new Position(19, 15), new Walls(new Position(19, 15)));
+		
+		things.put(new Position(3, 16), new Walls(new Position(3, 16))); //sixteenth row
+		things.put(new Position(4, 16), new Walls(new Position(4, 16)));
+		
+		things.put(new Position(6, 16), new Walls(new Position(6, 16)));
+		
+		things.put(new Position(8, 16), new Walls(new Position(8, 16)));
+		things.put(new Position(9, 16), new Walls(new Position(9, 16)));
+		things.put(new Position(10, 16), new Walls(new Position(10, 16)));
+		things.put(new Position(11, 16), new Walls(new Position(11, 16)));
+		things.put(new Position(12, 16), new Walls(new Position(12, 16)));
+		things.put(new Position(13, 16), new Walls(new Position(13, 16)));
+		things.put(new Position(14, 16), new Walls(new Position(14, 16)));
+		
+		things.put(new Position(16, 16), new Walls(new Position(16, 16)));
+		
+		things.put(new Position(18, 16), new Walls(new Position(18, 16)));
+		things.put(new Position(19, 16), new Walls(new Position(19, 16)));
+		
+//		things.put(new Position(3, 17), new Walls(new Position(3, 17))); //seventeenth row
+		
+		
+		things.put(new Position(6, 17), new Walls(new Position(6, 17)));
+		
+		
+		
+		
+		things.put(new Position(11, 17), new Walls(new Position(11, 17)));
+		
+		
+		
+		
+		things.put(new Position(16, 17), new Walls(new Position(16, 17)));
+		
+		
+		things.put(new Position(3, 18), new Walls(new Position(3, 18))); //eighteenth row
+		things.put(new Position(4, 18), new Walls(new Position(4, 18)));
+		things.put(new Position(5, 18), new Walls(new Position(5, 18)));
+		things.put(new Position(6, 18), new Walls(new Position(6, 18)));
+		things.put(new Position(7, 18), new Walls(new Position(7, 18)));
+		things.put(new Position(8, 18), new Walls(new Position(8, 18)));
+		things.put(new Position(9, 18), new Walls(new Position(9, 18)));
+		
+		things.put(new Position(11, 18), new Walls(new Position(11, 18)));
+		
+		things.put(new Position(13, 18), new Walls(new Position(13, 18)));
+		things.put(new Position(14, 18), new Walls(new Position(14, 18)));
+		things.put(new Position(15, 18), new Walls(new Position(15, 18)));
+		things.put(new Position(16, 18), new Walls(new Position(16, 18)));
+		things.put(new Position(17, 18), new Walls(new Position(17, 18)));
+		things.put(new Position(18, 18), new Walls(new Position(18, 18)));
+		things.put(new Position(19, 18), new Walls(new Position(19, 18)));
 		
 		
 		
