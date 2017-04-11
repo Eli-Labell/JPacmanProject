@@ -5,9 +5,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * This is the board state object<br>
+ * This is the board state class<br>
  * It keeps track of board piece objects and their properties<br>
- * It
+ * It holds data structures that are referenced from other classes to test is moves are legal<br>
  * 
  * 
  * @author Eliezer Labell
@@ -32,7 +32,7 @@ public class BoardState {
 	public static void populate() {
 		
 		Position pacoPos = new Position(2, 2);
-		Pacman paco = new Pacman(pacoPos);
+		paco = new Pacman(pacoPos);
 		stuff.put(pacoPos,  paco);
 		
 		Position inky = new Position(10, 10);

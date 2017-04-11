@@ -1,8 +1,8 @@
 package pacmangame;
 
 /**
- * Pacman class controls the various facets of pacman life
- * 
+ * Pacman class controls the various facets of pacman life<br>
+ * There is only one pacman needed in a map so a static variable exists in board state that holds the used pacman object<br>
  * 
  * 
  * @author labelle
@@ -85,7 +85,7 @@ public class Pacman extends BoardPiece {
 			} else {  //paco eats scardy ghosts
 				eatFood(newPos);
 			}
-			return true;
+				return true;
 		} else { //empty space has no consequnces, just go there
 			BoardState.stuff.remove(BoardState.paco.getPos());
 			BoardState.stuff.put(newPos, BoardState.paco);
