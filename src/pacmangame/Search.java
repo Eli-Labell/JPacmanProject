@@ -6,7 +6,7 @@ import java.util.Queue;
 import java.util.Set;
 import java.util.Stack;
 /**
- * 
+ * This class contains the search algorithms, and their helper methods.
  * 
  */
 public class Search {
@@ -105,10 +105,6 @@ public class Search {
 		sendMoves((Position[])path.toArray());
 	}
 	
-	@SuppressWarnings("unused")
-	private void CSF() {
-		
-	}
 	/**
 	 * This method takes a node position and searches up, down, left, and right for unvisited child nodes,
 	 * and passes back a child node that meets those parameters. If no such node exists, returns null.
