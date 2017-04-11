@@ -372,7 +372,7 @@ public class BoardState {
 		things.put(new Position(17, 18), new Walls(new Position(17, 18)));
 		things.put(new Position(18, 18), new Walls(new Position(18, 18)));
 		things.put(new Position(19, 18), new Walls(new Position(19, 18)));
-		
+	
 		
 		
 		
