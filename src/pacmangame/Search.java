@@ -117,13 +117,13 @@ public class Search {
 	 * @return child node position
 	 */
 	private static Position getUnvisitedChildPiece(Position parent) {
-		if (!(BoardState.things.get(Position.getUp(parent)) instanceof Walls) && !(BoardState.things.get(Position.getUp(parent))).whereAmI.visited)
+		if (!(BoardState.things.get(Position.getUp(parent)) instanceof Walls) && !((BoardState.things.get(Position.getUp(parent))).whereAmI.visited))
 			return BoardState.things.get(Position.getUp(parent)).whereAmI;
-		else if (!(BoardState.things.get(Position.getDown(parent)) instanceof Walls) && !(BoardState.things.get(Position.getDown(parent))).whereAmI.visited)
+		else if (!(BoardState.things.get(Position.getDown(parent)) instanceof Walls) && !((BoardState.things.get(Position.getDown(parent))).whereAmI.visited))
 			return BoardState.things.get(Position.getDown(parent)).whereAmI;
-		else if (!(BoardState.things.get(Position.getLeft(parent)) instanceof Walls) && !(BoardState.things.get(Position.getLeft(parent))).whereAmI.visited)
+		else if (!(BoardState.things.get(Position.getLeft(parent)) instanceof Walls) && !((BoardState.things.get(Position.getLeft(parent))).whereAmI.visited))
 			return BoardState.things.get(Position.getLeft(parent)).whereAmI;
-		else if (!(BoardState.things.get(Position.getRight(parent)) instanceof Walls) && !(BoardState.things.get(Position.getRight(parent))).whereAmI.visited)
+		else if (!(BoardState.things.get(Position.getRight(parent)) instanceof Walls) && !((BoardState.things.get(Position.getRight(parent))).whereAmI.visited))
 			return BoardState.things.get(Position.getRight(parent)).whereAmI;
 		else
 			return null;
