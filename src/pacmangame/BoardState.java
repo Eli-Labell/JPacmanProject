@@ -70,10 +70,21 @@ public class BoardState {
 			y++;
 		}
 		x = 2;
+		while (x < 11) { //top empty line
+			things.put(new Position(x, 2), new Food(new Position(x, 2), false));
+			x++;
+		}
+		things.put(new Position(11, 2), new Walls(new Position(11, 2)));
+		x = 12;
 		while (x < 21) { //top empty line
 			things.put(new Position(x, 2), new Food(new Position(x, 2), false));
 			x++;
 		}
+		
+		
+		
+		
+		
 		x = 2;
 		while (x < 21) { //bottom empty line
 			things.put(new Position(x, 19), new Food(new Position(x, 19), false));
